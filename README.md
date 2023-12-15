@@ -50,7 +50,10 @@ Esses serviços interagem entre si e demonstram princípios de resiliência, ras
 - Resiliência: Circuit Breaker e Retry para lidar com falhas.
 
 <img src=" capturas-de-telas /SwaggerProdutoService.png" width="100%" height="100%">
-*Figura 3: Swagger UI documentando os endpoints do ProdutoService*
+<img src=" capturas-de-telas /SwaggerProdutoServiceEndpoint" width="100%" height="100%">
+<img src=" capturas-de-telas /SwaggerVendaService" width="100%" height="100%">
+
+*Figura 3, 4 e 5: Swagger UI documentando os endpoints do ProdutoService*
 
 ### VendaService
 - Endpoints: POST para registrar vendas.
@@ -65,11 +68,13 @@ Esses serviços interagem entre si e demonstram princípios de resiliência, ras
 - Monitoramento de métricas com Prometheus e visualização no Grafana.
 
 <img src=" capturas-de-telas /Grafana.png" width="100%" height="100%">
-![Dashboard do Grafana](/caminho/para/Grafana.png)
-*Figura 4: Dashboard do Grafana visualizando métricas do serviço*
+
+*Figura 6: Dashboard do Grafana visualizando métricas do serviço*
 
 <img src=" capturas-de-telas /Zipkin.png" width="100%" height="100%">
-*Figura 5: Rastreamento do Zipkin para sistemas distribuídos*
+<img src=" capturas-de-telas /Zipkin2.png" width="100%" height="100%">
+
+*Figura 7 e 8: Rastreamento do Zipkin para sistemas distribuídos*
 
 ## Problemas Conhecidos e Limitações
 - Verificação da configuração de rede para Docker e Eureka.
