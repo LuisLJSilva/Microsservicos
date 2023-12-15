@@ -13,8 +13,8 @@ Esses serviços interagem entre si e demonstram princípios de resiliência, ras
 - Client-side Load Balancer: Integração com Eureka para balanceamento de carga.
 - Monitoramento e Rastreamento: Uso do Zipkin para rastreamento distribuído.
 
-![Registro de Serviço Eureka](capturas-de-telas/Eureka.png)
-<img src="capturas-de-telas/Eureka.png" width="50%" height="50%">
+![Registro de Serviço Eureka]( capturas-de-telas /Eureka.png)
+<img src=" capturas-de-telas /Eureka.png" width="50%" height="50%">
 
 *Figura 1: Registro de serviço Eureka mostrando o status dos microserviços*
 
