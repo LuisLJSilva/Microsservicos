@@ -14,6 +14,8 @@ Esses serviços interagem entre si e demonstram princípios de resiliência, ras
 - Monitoramento e Rastreamento: Uso do Zipkin para rastreamento distribuído.
 
 ![Registro de Serviço Eureka]( capturas-de-telas/Eureka.png)
+<img src="capturas-de-telas/Eureka.png" width="50%" height="50%">
+
 *Figura 1: Registro de serviço Eureka mostrando o status dos microserviços*
 
 ## Tecnologias e Ferramentas
