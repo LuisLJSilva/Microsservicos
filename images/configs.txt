@@ -1,0 +1,20 @@
+Criação da rede 
+docker network create aula-ms-network
+
+Zipkin
+docker run -d -p 9411:9411 openzipkin/zipkin
+
+Postgres
+docker run --name postgres_container --network aula-ms-network -e POSTGRES_PASSWORD=root -d -p 15432:5432 postgres
+
+Grafana
+docker pull grafana/grafana
+docker run -d --name=grafana -p 3000:3000 grafana/grafana
+user: admin senha: admin
+
+Prometheus
+docker build -t infnet/prometheus .
+docker run --name prometheus\
+    -p 9090:9090 \
+    -v /Users/psyco/Documents/Infnet/Projetos/Microsservicos/images/prometheus/prometheus.yml:/etc/prometheus/prometheus.yml \
+    prom/prometheus
