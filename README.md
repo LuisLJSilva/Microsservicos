@@ -14,6 +14,7 @@ Esses serviços interagem entre si e demonstram princípios de resiliência, ras
 - Monitoramento e Rastreamento: Uso do Zipkin para rastreamento distribuído.
 
 <img src=" capturas-de-telas /Eureka.png" width="100%" height="100%">
+
 *Figura 1: Registro de serviço Eureka mostrando o status dos microserviços*
 
 ## Tecnologias e Ferramentas
@@ -30,6 +31,7 @@ Esses serviços interagem entre si e demonstram princípios de resiliência, ras
 - Prometheus e Grafana: Para monitoramento de métricas e visualização de dados.
 
 <img src=" capturas-de-telas /DockerConfigs.png" width="100%" height="100%">
+
 *Figura 2: Configurações Docker para a configuração de microserviços*
 
 ## Configuração e Instalação
@@ -78,6 +80,7 @@ Esses serviços interagem entre si e demonstram princípios de resiliência, ras
 *Figura 7: Dashboard do Grafana visualizando métricas do serviço*
 
 <img src=" capturas-de-telas /Prometheus.png" width="100%" height="100%">
+
 *Figura 8: Interface do Prometheus para monitoramento de métricas dos microserviços*
 
 <img src=" capturas-de-telas /Zipkin.png" width="100%" height="100%">
