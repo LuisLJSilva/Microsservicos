@@ -1,0 +1,10 @@
+br/com/infnet/produtoservice/repository/ProdutoRepository.class
+br/com/infnet/produtoservice/service/impl/ProdutoServiceImpl.class
+br/com/infnet/produtoservice/payload/ResponsePayload$ResponsePayloadBuilder.class
+br/com/infnet/produtoservice/controller/ProdutoController.class
+br/com/infnet/produtoservice/payload/ResponsePayload.class
+br/com/infnet/produtoservice/model/Produto$ProdutoBuilder.class
+br/com/infnet/produtoservice/ProdutoServiceApplication.class
+br/com/infnet/produtoservice/service/ProdutoService.class
+br/com/infnet/produtoservice/exception/ProdutoNotFoundException.class
+br/com/infnet/produtoservice/model/Produto.class

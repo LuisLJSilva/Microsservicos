@@ -1,0 +1,61 @@
+server:
+  port: 8080
+
+spring:
+  application:
+    name: PRODUTO-SERVICE
+  datasource:
+#    com Docker
+#    url: jdbc:postgresql://banco-aula-ms:5432/postgres
+    url: jdbc:postgresql://localhost:15432/postgres
+    username: postgres
+    password: root
+  jpa:
+    hibernate:
+      ddl-auto: create-drop
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+        show_sql: true
+        format_sql: true
+eureka:
+  client:
+    fetch-registry: true
+    register-with-eureka: true
+    service-url:
+      defaultZone: http://localhost:8761/eureka
+      #    com Docker
+      #    defaultZone: http://eureka-server:8761/eureka
+
+logging:
+  pattern:
+    level: 5p [${spring.application.name},%X{traceId:-},%X{spanId:-}]
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health, info, metrics, prometheus
+  zipkin:
+    tracing:
+      endpoint: http://localhost:9411/api/v2/spans
+  tracing:
+    sampling:
+      probability: 1.0
+
+resilience4j.circuitbreaker:
+  instances:
+    produtoService:
+      registerHealthIndicator: true
+      slidingWindowSize: 100
+      minimumNumberOfCalls: 10
+      failureRateThreshold: 50
+      waitDurationInOpenState: 10000
+      permittedNumberOfCallsInHalfOpenState: 3
+      automaticTransitionFromOpenToHalfOpenEnabled: true
+
+resilience4j.retry:
+  instances:
+    produtoService:
+      maxRetryAttempts: 3
+      waitDuration: 1000
