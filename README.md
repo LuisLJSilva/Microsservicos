@@ -50,8 +50,8 @@ Esses serviços interagem entre si e demonstram princípios de resiliência, ras
 - Resiliência: Circuit Breaker e Retry para lidar com falhas.
 
 <img src=" capturas-de-telas /SwaggerProdutoService.png" width="100%" height="100%">
-<img src=" capturas-de-telas /SwaggerProdutoServiceEndpoint" width="100%" height="100%">
-<img src=" capturas-de-telas /SwaggerVendaService" width="100%" height="100%">
+<img src=" capturas-de-telas /SwaggerProdutoServiceEndpoint.png" width="100%" height="100%">
+<img src=" capturas-de-telas /SwaggerVendaService.png" width="100%" height="100%">
 
 *Figura 3, 4 e 5: Swagger UI documentando os endpoints do ProdutoService*
 
