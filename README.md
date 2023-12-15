@@ -13,8 +13,7 @@ Esses serviços interagem entre si e demonstram princípios de resiliência, ras
 - Client-side Load Balancer: Integração com Eureka para balanceamento de carga.
 - Monitoramento e Rastreamento: Uso do Zipkin para rastreamento distribuído.
 
-<img src=" capturas-de-telas /Eureka.png" width="50%" height="50%">
-
+<img src=" capturas-de-telas /Eureka.png" width="100%" height="100%">
 *Figura 1: Registro de serviço Eureka mostrando o status dos microserviços*
 
 ## Tecnologias e Ferramentas
@@ -29,6 +28,9 @@ Esses serviços interagem entre si e demonstram princípios de resiliência, ras
 - Zipkin: Para rastreamento distribuído das chamadas entre serviços.
 - Maven: Para gerenciamento de dependências e build do projeto.
 - Prometheus e Grafana: Para monitoramento de métricas e visualização de dados.
+
+<img src=" capturas-de-telas /DockerConfigs.png" width="100%" height="100%">
+*Figura 2: Configurações Docker para a configuração de microserviços*
 
 ## Configuração e Instalação
 ### Pré-requisitos
@@ -47,6 +49,9 @@ Esses serviços interagem entre si e demonstram princípios de resiliência, ras
 - Endpoints: GET, POST, PUT, DELETE para gerenciamento de produtos.
 - Resiliência: Circuit Breaker e Retry para lidar com falhas.
 
+<img src=" capturas-de-telas /SwaggerProdutoService.png" width="100%" height="100%">
+*Figura 3: Swagger UI documentando os endpoints do ProdutoService*
+
 ### VendaService
 - Endpoints: POST para registrar vendas.
 - Comunicação com ProdutoService: Utiliza OpenFeign para chamadas de serviço.
@@ -58,6 +63,13 @@ Esses serviços interagem entre si e demonstram princípios de resiliência, ras
 - Rastreamento de chamadas de serviço com Zipkin.
 - Configurações de logging para análise de desempenho e diagnóstico.
 - Monitoramento de métricas com Prometheus e visualização no Grafana.
+
+<img src=" capturas-de-telas /Grafana.png" width="100%" height="100%">
+![Dashboard do Grafana](/caminho/para/Grafana.png)
+*Figura 4: Dashboard do Grafana visualizando métricas do serviço*
+
+<img src=" capturas-de-telas /Zipkin.png" width="100%" height="100%">
+*Figura 5: Rastreamento do Zipkin para sistemas distribuídos*
 
 ## Problemas Conhecidos e Limitações
 - Verificação da configuração de rede para Docker e Eureka.
